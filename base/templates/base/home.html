@@ -1,0 +1,89 @@
+{% load static %}
+
+
+{% comment %} <h1>Hello World</h1>
+<img class = 'image' src="{% static '/images/profile.jpg'%}" alt=""/> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Naveen's Portfolio</title>
+</head>
+<body>
+    <br>
+<div class="container">
+    <div class = 'row'>
+        <div class="col-md-3">
+            <div class="card card-body h-100 border-info" id = 'profile-wrapper'>
+                <img id = 'profile-pic' src="{% static '/images/profile.jpg'%}" alt=""/> 
+                <br>
+                <h4>Hi Im <br>Naveen Kumar RK </h4>
+                <p>I am a Machine learning enthusisast, delved into LLMs and stuffs..</p>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card card-body h-100 border-info">
+                <h4>My journey into Machine Learning</h4>
+                <hr>
+                <p>I started out first as learning a web development framework like django and Flask after completing the basic i sated to delve more into some interesting topics like MAchine learning and Deep LEarning</p>
+
+                <p>As I continued to code more in python i got enough experience to dive into machine learning and deep learning. I started out by learning basic Data Analysis course and got deeper using textbooks.</p>
+
+                <p>From this you'll see that I'm someone that jumps before I can talk myself out of doing something scary</p>
+            <ul class = 'social-links'>
+                <li><img class = 'social' src="{% static 'images/facebook.png' %}" alt="facebook"></li>
+                <li><img class = 'social' src="{% static 'images/instagram.png' %}" alt="instagram"></li>
+                <li><img class = 'social' src="{% static 'images/twitter.png' %}" alt="twitter"></li>
+                <li><img class = 'social' src="{% static 'images/youtube.png' %}" alt="youtube"></li>
+            </ul>
+            </div>
+        </div> 
+    </div> 
+
+
+    <br>
+    <div class = 'row'>
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>My Experience as a developer</h5>
+                <hr>
+                <p>Machine Learning Intern at IIITDM - Kancheepuram.</strong></p>
+                <p>Employed transfer learning methods for skin cancer detection and compared different models to check their performance based on HAM10000 dermascopic images dataset by Kaggle.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>What I Know</h5>
+                <hr>
+                <p>Python, Java, Django, React, SQL and Machine learning and deep learning with NLP and Computer vision.</p>
+                <p>Currently learning genai topics such as LLMs and LLMops</p>
+                
+            </div>
+        </div> 
+    </div> 
+    <br>
+    <div class = 'row'>
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>My Projects</h5>
+                <hr>
+                <p st>Object detection using YOLOv8</p>
+                <p>I have used YOLOv8 model to detect object on both in-build and custom images detection which i have used in gelmet detection model.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>Goals</h5>
+                <hr>
+                <p>After learning ins and outs of ML and AI, I will create an application or a research which would contribute to the technological growth in this field</p>
+            </div>
+        </div> 
+    </div> 
+</div>
+</body>
+</html>
